@@ -170,43 +170,45 @@
 
     </head>
     <body>
-        <h1 style="text-align: center; font-size: 70px; transform: scale(2,1); color: mediumblue">Training Login</h1>
-        <img src="bi.png" style="margin-left: 100px; margin-right: 0px"/>
-        <div class="log" style="border-radius: 10px; border-bottom-right-radius: 100px; margin-right: 40px">
+        <div class="heading">
+        <h1>Training Login</h1>
+    </div>
+        <img src="bi.png"/>
+        <div class="log">
         <form action="logCheck.php" method="POST">
-                <div style="border-bottom: 1px dotted black; padding-bottom: 10px; background-color: powderblue; border-radius: 10px">
+                <div class="login">
             <table>
                 <tr>
-                    <td style="padding-left: 20px">
-                        <span style="font-size: 18px; margin-top: 20px">User Id:</span><input type="text" placeholder="User Id" style="font-size: 18px; margin-top: 20px; margin-left: 6px; padding-left: 20px; border-radius: 10px" value="" id="uid" name="uid" required />
-                    </td>
-                    <td style="padding-left: 20px">
-                        <span style="font-size: 18px; margin-top: 20px">Password:</span> <input type="password" style="font-size: 18px; margin-top: 20px; padding-left: 20px; border-radius: 10px" placeholder="Password" id="pass" name="pass" value="" required />
+                    <td>
+                        <span>User Id:</span><input type="text" placeholder="User Id" value="" id="uid" name="uid" required />
                     </td>
                     <td>
-                        <input type="Submit" value="Log In" style="font-size: 18px; margin-top: 20px;border-color: darkturquoise; background-color:cyan; margin-left: 10px; border-radius: 10px" id="login" onclick="return logCheck()" onmousemove="move(event)"/>
+                        <span>Password:</span><input type="password" placeholder="Password" id="pass" name="pass" value="" required />
+                    </td>
+                    <td>
+                        <input type="Submit" value="Log In" id="login" onclick="return logCheck()" onmousemove="move(event)"/>
                     </td>
                 </tr>
             </table>
         </div>
         </form>
-        <div style="padding-left: 20px">
+        <div class="sub">
             <form action="subCheck.php" method="POST">
-                <h2 style="text-align: center; font-family: cursive; font-stretch: extra-expanded; transform: scale(3,2)">Register</h2>
-                <p style="text-align: center">You can register for free</p>
+                <div class="regHead"><h2>Register</h2></div>
+                <p>You can register for free</p>
                 <br>
                 <tr>
                     <td>
                         First Name: 
                     </td>
                     <td>
-                        <input type="text" style="margin-left: 69px; width: 26.3%; margin-bottom: 5px; font-size: 18px; padding-left: 20px; border-radius: 10px"placeholder="First Name" id="fname" required name="fname" />
+                        <input type="text" placeholder="First Name" id="fname" required name="fname" />
                     </td>
                     <td>
-                        <span style="padding-left: 20px">Last Name:</span>
+                        <span>Last Name:</span>
                     </td>
                     <td>
-                        <input type="text" placeholder="Last Name" id="lname" required name="lname" style="font-size: 18px; padding-left: 20px; width: 26.3%; border-radius: 10px"/><span style="color: red"><?php if($source=="name"){echo nl2br("\n*Enter a valid Name!");} ?></span>
+                        <input type="text" placeholder="Last Name" id="lname" required name="lname"/><span class="error"><?php if($source=="name"){echo nl2br("\n*Enter a valid Name!");} ?></span>
                     </td>
                 </tr>
                 <br>
@@ -215,7 +217,7 @@
                         Date of Birth:
                     </td>
                     <td>
-                        <select name="dobd" id="dobd" style="margin-left: 52.5px; padding-right: 20px; padding-left: 20px; margin-bottom: 5px; font-size: 18px; border-radius: 10px">
+                        <select name="dobd" id="dobd">
                             <option value="0">Date</option>
                             <option value="01">01</option>
                             <option value="02">02</option>
@@ -251,7 +253,7 @@
                         </select>
                     </td>
                     <td>
-                        <select name="dobm" id="dobm" style="margin-left: 20px; padding-left: 20px; font-size: 18px; border-radius: 10px">
+                        <select name="dobm" id="dobm">
                             <option value="0">Month</option>
                             <option value="Jan">January</option>
                             <option value="Feb">February</option>
@@ -268,7 +270,7 @@
                         </select>
                     </td>
                     <td>
-                        <select name="doby" id="doby" style="margin-left: 20px; padding-left: 20px;padding-right: 20px; font-size: 18px; border-radius: 10px">
+                        <select name="doby" id="doby">
                                 <option value="0">Year</option>
                                 <option value="2018">2018</option>
                                 <option value="2017">2017</option>
@@ -384,7 +386,7 @@
                                 <option value="1907">1907</option>
                                 <option value="1906">1906</option>
                                 <option value="1905">1905</option>
-                        </select> <span style="color: red"><?php if($source=="dob"){echo"*Enter a valid Date of Birth!";} ?></span>
+                        </select> <span class="error"><?php if($source=="dob"){echo"*Enter a valid Date of Birth!";} ?></span>
                     </td>
                 </tr>
                 <br>
@@ -393,7 +395,7 @@
                         Email Id:
                     </td>
                     <td>
-                        <input type="text" id="newuid" placeholder="eg: abc@xyz.com" name="uname"  style="margin-left: 87px; width: 70%; padding-left: 20px; padding-right: 20px; margin-bottom: 5px; font-size: 18px; border-radius: 10px" required/> <span style="color: red"><?php if($source=="uid"){echo"*Enter a valid User Id!";} ?></span>
+                        <input type="text" id="newuid" placeholder="eg: abc@xyz.com" name="uname" required/> <span class="error"><?php if($source=="uid"){echo"*Enter a valid User Id!";} ?></span>
                     </td>
                 </tr>
                 <br>
@@ -402,7 +404,7 @@
                         Password:
                     </td>
                     <td>
-                        <input type="password" id="newpasswd1" name="pass1"  style="margin-left: 81px; padding-left: 20px; padding-right: 20px; font-size: 18px; margin-bottom: 5px; width: 70.1%; border-radius: 10px" placeholder="Password" required />
+                        <input type="password" id="newpasswd1" name="pass1" placeholder="Password" required />
                     </td>
                 </tr>
                 <br>
@@ -411,7 +413,7 @@
                         Confirm Password:
                     </td>
                     <td>
-                        <input type="password" id="newpasswd2" name="pass2"  style="margin-left: 8px; margin-bottom: 5px; padding-left: 20px; padding-right: 20px; font-size: 18px; width: 70%; border-radius: 10px" placeholder="Repeat Password" required /> <span style="color: red"><?php if($source=="pass"){echo"*Passwords did not match!";} ?></span>
+                        <input type="password" id="newpasswd2" name="pass2" placeholder="Repeat Password" required /> <span class="error"><?php if($source=="pass"){echo"*Passwords did not match!";} ?></span>
                     </td>
                 </tr>
                 <br>
@@ -420,7 +422,7 @@
                         Mob. No.:
                     </td>
                     <td>
-                        <input type="text" id="mob" name="mob"  style="margin-left: 81px; padding-left: 20px; padding-right: 20px; margin-bottom: 5px; font-size: 18px;  width: 70%; border-radius: 10px" placeholder="Enter a 10 digit Mobile Number" required /> <span style="color: red"><?php if($source=="mob"){echo"*Enter a valid Mobile Number!";} ?></span>
+                        <input type="text" id="mob" name="mob" placeholder="Enter a 10 digit Mobile Number" required /> <span class="error"><?php if($source=="mob"){echo"*Enter a valid Mobile Number!";} ?></span>
                     </td>
                 </tr>
                 <br>
@@ -429,17 +431,17 @@
                         Gender:
                     </td>
                     <td>
-                        <input type="radio" name="gender" id="r1" value="male" style="margin-left: 99px; font-size: 18px" onkeydown="click()">Male
+                        <input type="radio" name="gender" id="r1" value="male" onkeydown="click()">Male
                     </td>
                     <td>
-                        <input type="radio" name="gender" id="r2" style="margin-left: 20px" value="female">Female <span style="color: red"><?php if($source=="gender"){echo"*Please select gender!";} ?></span>
+                        <input type="radio" name="gender" id="r2" value="female">Female <span class="error"><?php if($source=="gender"){echo"*Please select gender!";} ?></span>
                     </td>
                 </tr>
-                <input type="submit" id="sub" style="margin-top: 7px; width: 100px;background-color: palegreen; font-size: 22px; border-radius: 10px; margin-left: 230px" value="Submit" onmousemove="move(event)" onclick="return subCheck()" />
+                <input type="submit" id="sub" value="Submit" onmousemove="move(event)" onclick="return subCheck()" />
             </form>
             <br>
             <br />
-            <button onclick="getCookies()" style="margin-left: 350px">Reload previous details</button>
+            <button onclick="getCookies()">Reload previous details</button>
             </div>
         </div>
     </body>

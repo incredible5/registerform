@@ -1,0 +1,191 @@
+body
+{
+    background-color: aliceblue;
+}
+img
+{
+    margin-left: 60px;
+}
+.heading
+{
+    margin: auto;
+    font-size: 30px;
+    transform: scale(2,1);
+    max-width: max-content;
+    color: mediumblue;
+}
+.log
+{
+    margin-right: 20px;
+    font-size: 20px;
+    float: right;
+    background-color: ghostwhite;
+    border-radius: 10px;
+    border-bottom-right-radius: 100px;
+}
+.login
+{
+    border-bottom: 1px dotted black;
+    padding-bottom: 10px;
+    background-color: powderblue;
+    border-radius: 10px;
+}
+.login td
+{
+    padding-left: 20px;
+}
+.login span
+{
+    font-size: 18px;
+}
+#uid
+{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 6px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+#pass
+{
+    font-size: 18px;
+    margin-top: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+#login
+{
+    font-size: 18px;
+    margin-top: 20px;
+    border-color: darkturquoise;
+    background-color:cyan;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.sub
+{
+    padding-left: 20px;
+}
+.regHead
+{
+    font-family: cursive;
+    transform: scale(3,2);
+    margin: auto;
+    font-size: 30px;
+    transform: scale(2,1);
+    max-width: max-content;
+}
+p
+{
+    text-align: center;
+}
+#fname
+{
+    margin-left: 69px;
+    width: 26.3%;
+    margin-bottom: 5px;
+    font-size: 18px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.sub span
+{
+    padding-left: 20px;
+}
+#lname
+{
+    font-size: 18px;
+    padding-left: 20px;
+    width: 26.3%;
+    border-radius: 10px;
+}
+.error
+{
+    color: red;
+}
+#dobd
+{
+    margin-left: 52.5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+#dobm
+{
+    margin-left: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+#doby
+{
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+#newuid
+{
+    margin-left: 87px;
+    width: 70%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    border-radius: 10px;    
+}
+#newpasswd1
+{
+    margin-left: 81px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    /* width: 70.1%; */
+    border-radius: 10px;
+}
+#newpasswd2
+{
+    margin-left: 8px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    width: 70%;
+    border-radius: 10px;
+}
+#mob
+{
+    margin-left: 81px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    width: 70%;
+    border-radius: 10px;
+}
+#r1
+{
+    margin-left: 99px;
+    font-size: 18px;
+}
+#r2
+{
+    margin-left: 20px;
+}
+#sub
+{
+    margin-top: 7px;
+    width: 100px;
+    background-color: palegreen;
+    font-size: 22px;
+    border-radius: 10px;
+    margin-left: 230px;
+}
+button
+{
+    margin-left: 350px;
+}
